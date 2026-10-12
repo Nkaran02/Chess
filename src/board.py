@@ -1,20 +1,3 @@
-from const import *
-from square import Square
+WIDTH = 500
+HEIGHT = 500
 
-class Board:
-
-    def __init__(self):
-        self.squares = [[0, 0, 0, 0, 0, 0, 0, 0] for col in range(COLUMNS)]
-        self._create()
-
-    def _create(self): # _ to indicate that it is an private method
-        for row in range(ROWS):
-            for col in range(COLUMNS):
-                self.squares[row][col] = Square(row, col)
-
-
-    def _add_pieces(self, color):
-        pass
-
-b = Board()
-b._create()
